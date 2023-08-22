@@ -36,7 +36,7 @@ export default function Auth() {
       if (error) {
         alert(error.message)   // ログインに失敗した場合、エラーメッセージを alertで表示
       } else {
-        router.push('/')       // ログインに成功した場合、Homeページへ遷移
+        router.push('/auth/todo-crud')       // ログインに成功した場合、Todo一覧ページに遷移
       }
 
     // 新規登録モードの場合 (isLogin = false)
